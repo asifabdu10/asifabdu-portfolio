@@ -249,7 +249,7 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen bg-[#07090e] text-slate-100 font-sans selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
-      
+
       {/* =========================================================================
           ATMOSPHERIC SPOTLIGHT EFFECT (Directly inspired by the 3D showcase video)
           ========================================================================= */}
@@ -326,7 +326,7 @@ const Portfolio = () => {
           ========================================================================= */}
       <header className="sticky top-0 z-40 backdrop-blur-xl bg-[#07090e]/75 border-b border-slate-800/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
-          
+
           {/* Logo / Brand Name */}
           <a href="#about" className="flex items-center space-x-3 group">
             <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform">
@@ -384,7 +384,7 @@ const Portfolio = () => {
             ======================================================================= */}
         <section id="about" className="pt-6 lg:pt-10">
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            
+
             {/* Left Column: Interactive 3D Avatar Scene (Exactly like the YouTube Short) */}
             <div className="lg:col-span-5 order-2 lg:order-1 flex justify-center">
               <div className="w-full max-w-[480px] relative">
@@ -398,7 +398,7 @@ const Portfolio = () => {
                       <div className="w-2.5 h-2.5 rounded-full bg-amber-500/70"></div>
                       <div className="w-2.5 h-2.5 rounded-full bg-emerald-500/70"></div>
                     </div>
-                    <span className="text-slate-500">developer-workspace.3d</span>
+
                   </div>
                   {/* Three.js 3D Canvas */}
                   <Hero3DCanvas />
@@ -408,7 +408,7 @@ const Portfolio = () => {
 
             {/* Right Column: Hero Typography & Professional Bio */}
             <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
-              
+
               {/* Status Badge */}
               <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/25 text-indigo-300 text-xs font-mono">
                 <span className="relative flex h-2 w-2">
@@ -620,11 +620,10 @@ const Portfolio = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-3.5 py-1.5 text-xs font-medium rounded-lg transition-all ${
-                    activeTab === tab.id
-                      ? "bg-indigo-600 text-white shadow-md"
-                      : "text-slate-400 hover:text-slate-200"
-                  }`}
+                  className={`px-3.5 py-1.5 text-xs font-medium rounded-lg transition-all ${activeTab === tab.id
+                    ? "bg-indigo-600 text-white shadow-md"
+                    : "text-slate-400 hover:text-slate-200"
+                    }`}
                 >
                   {tab.label}
                 </button>
@@ -906,7 +905,7 @@ const Portfolio = () => {
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
           <div className="relative w-full max-w-2xl bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl overflow-y-auto max-h-[90vh]">
-            
+
             {/* Modal Header */}
             <div className="flex items-start justify-between">
               <div className="flex items-center space-x-3">
@@ -1005,7 +1004,7 @@ const Portfolio = () => {
       {showResumeModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
           <div className="relative w-full max-w-3xl bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl overflow-y-auto max-h-[92vh]">
-            
+
             <div className="flex items-center justify-between border-b border-slate-800 pb-4">
               <div>
                 <h3 className="text-2xl font-black text-white uppercase tracking-wide">

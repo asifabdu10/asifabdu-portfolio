@@ -349,10 +349,7 @@ const Hero3DCanvas = () => {
       {/* 3D Canvas Mount */}
       <div ref={mountRef} className="w-full h-full cursor-grab active:cursor-grabbing relative z-10" />
       {/* Floating 3D Badge Indicator */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center space-x-2 bg-slate-900/80 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-slate-700/80 text-xs font-mono text-slate-300 shadow-xl pointer-events-none">
-        <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-        <span>Interactive 3D Avatar • Move Mouse</span>
-      </div>
+
     </div>
   );
 };
